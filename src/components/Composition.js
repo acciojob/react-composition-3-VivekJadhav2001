@@ -1,18 +1,18 @@
-import React from 'react'
-import Tooltip from './Tooltip'
+import React from "react";
+import Tooltip from "./Tooltip";
 
 function Composition() {
   return (
     <div>
-      <Tooltip Tag="h2" text="Tooltip for heading">
-        Hover over this heading
+      <Tooltip text="Tooltip for heading">
+        <h2>Hover over this heading</h2>
       </Tooltip>
 
-      <Tooltip Tag="p" text="Tooltip for paragraph">
-        Hover over this paragraph
+      <Tooltip text="Tooltip for paragraph">
+        <p>Hover over this paragraph</p>
       </Tooltip>
     </div>
-  )
+  );
 }
 
-export default Composition
+export default Composition;
