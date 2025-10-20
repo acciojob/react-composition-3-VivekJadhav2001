@@ -1,22 +1,17 @@
 import React, { useState } from "react";
 
-const Tooltip = ({ text, children }) => {
-  const [visible, setVisible] = useState(false);
+const Tooltip = ({ text, Tag, children }) => {
+  const [show, setShow] = useState(false);
 
   return (
-    <div
+    <Tag
       className="tooltip"
-      onMouseEnter={() => setVisible(true)}
-      onMouseLeave={() => setVisible(false)}
-      style={{ display: "inline-block", position: "relative" }}
+      onMouseEnter={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
     >
       {children}
-      {visible && (
-        <div className="tooltiptext">
-          {text}
-        </div>
-      )}
-    </div>
+      {show && <div className="tooltiptext">{text}</div>}
+    </Tag>
   );
 };
 

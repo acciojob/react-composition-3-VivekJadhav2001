@@ -4,12 +4,12 @@ import Tooltip from './Tooltip'
 function Composition() {
   return (
     <div>
-      <Tooltip text="Heading tooltip">
-        <h2>Hover over this heading</h2>
+      <Tooltip Tag="h2" text="Tooltip for heading">
+        Hover over this heading
       </Tooltip>
 
-      <Tooltip text="Paragraph tooltip">
-        <p>Hover over this paragraph</p>
+      <Tooltip Tag="p" text="Tooltip for paragraph">
+        Hover over this paragraph
       </Tooltip>
     </div>
   )
