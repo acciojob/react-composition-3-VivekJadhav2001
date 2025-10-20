@@ -3,15 +3,13 @@ import Tooltip from './Tooltip'
 
 function Composition() {
   return (
-    <div style={{ padding: "40px" }}>
-      <Tooltip text="This is a button tooltip">
-        <button>Hover me</button>
+    <div>
+      <Tooltip text="Heading tooltip">
+        <h2>Hover over this heading</h2>
       </Tooltip>
 
-      <br /><br />
-
-      <Tooltip text="Tooltip on text">
-        <span>Hover over this text</span>
+      <Tooltip text="Paragraph tooltip">
+        <p>Hover over this paragraph</p>
       </Tooltip>
     </div>
   )
